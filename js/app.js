@@ -1,5 +1,6 @@
 var request = new XMLHttpRequest;
-request.open('get','http://www.reddit.com/r/funny/new.json','true');
+var subreddit = parse(document.location.search).subreddit;
+request.open('get','http://www.reddit.com/r/'+subreddit+'/new.json','true');
 request.addEventListener('load', function() {
   var info = JSON.parse(request.response);
   for (var i = 0; i < info.data.children.length; i++) {

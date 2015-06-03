@@ -14,12 +14,15 @@ request.addEventListener('load', function() {
   var button = document.getElementById('button');
   button.addEventListener('click', function(){
     if (karmaRange(karma) == select.value) {
+
       answer.innerHTML = "<h3>You got it right!<br>" + info.data.name +
-      " had " + karma + " link karma.</h3>";
+      " had " + karma + " link karma.</h3><br><a href=\"/index.html\"><h3>Play Again!</h3></a>";
+
     }
     else {
+      flashGreen('red');
       answer.innerHTML = "<h3>Incorrect!<br>" + info.data.name +
-      " had " + karma + " link karma.</h3>";
+      " had " + karma + " link karma.</h3><br><a href=\"/index.html\"><h3>Play Again!</h3></a>";
     }
   })
 });

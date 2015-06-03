@@ -4,10 +4,19 @@
     <meta chartype="utf-8">
     <title>Link Karma Guessing Game</title>
     <link href="/css/app.css" type="text/css" rel="stylesheet">
+
   </head>
   <body id="body">
     <h1>Can you guess the author's link karma from the title of the post?</h1>
-    <p>All entries are taking from front page of r/funny/new.</p>
+    <p>Enter a subreddit and submit for a lists of new posts in that subreddit.</p>
+    <div>
+      <form action="/index.html" method="get">
+        <label for="subr">Enter a subreddit!</label>
+        <div><input type="text" id="subri" name="subreddit"></div>
+        <button type="submit" id="subrb">Get posts!</button>
+      </form>
+    </div>
+    <script src="/js/logic.js"></script>
     <script src="/js/app.js"></script>
   </body>
 </html>
