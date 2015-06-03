@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess the Author's Karma</title>
+    <link href="/css/app.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="div"></div>
+    <div>
+    <label for="select">How much link karma do they have?</label></div>
+    <div>
+      <select id="select" name="link_karma">
+        <option value="1">0-10</option>
+        <option value="2">11-100</option>
+        <option value="3">101-1000</option>
+        <option value="4">1001-9000</option>
+        <option value="5">Over 9000</option>
+      </select>
+      <button type="button" id="button">Submit Guess</button>
+    </div>
+    <div id="answer"></div>
+    <script src="/js/logic.js"></script>
+    <script src="/js/queryparse.js"></script>
+    <script src="/js/app2.js"></script>
+  </body>
+</html>
